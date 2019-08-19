@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<p><a href="#" onMouseOver="highlight()" onMouseOut="plain()"><button>Hover here to Highlight</button></a></p> 
+
+<p><b>MY</b> NAME <b> IS </b><b>RAHUL</b> KUMAR <b> SINGH </b> </p>
+
+<script type="text/javascript"> 
+var highlight_Items;
+window.onload = getHighLight_items();
+ 
+
+function getHighLight_items() 
+{
+  highlight_Items = document.getElementsByTagName('b'); 
+}
+  
+function highlight() 
+{
+   for (var i=0; i<highlight_Items.length; i++)
+   {                                                    
+    highlight_Items[i].style.color = "red";
+    }
+}
+
+function plain()
+{
+  for (var i=0; i<highlight_Items.length; i++) 
+  {
+       highlight_Items[i].style.color = "black";
+  }
+}
+
+</script>
+</body>
+</html>

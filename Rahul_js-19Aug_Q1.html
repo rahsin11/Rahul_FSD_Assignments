@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+<input id="UserInput" placeholder="UserInput">
+<!-- <input id="GuessNumber" placeholder="Guess a Number"> -->
+<button type="button" onclick="test()">Click to Next</button>
+
+<!-- <p id="demo"></p> -->
+<p id="GuessNumber"></p>
+<p id="dem"></p>
+
+<script>
+function test() {
+  var a, b;
+
+  b = document.getElementById("UserInput").value;
+  var c=prompt("Enter a guess Number:");
+  c = document.getElementById("GuessNumber").value;
+
+  
+  if ( b>=1 && b<=&&15 && b===c ) {
+    alert("Right On :)");
+  } else {
+    alert("Unlucky :(");
+  }
+
+  // document.getElementById("dem").innerHTML = b;
+  document.getElementById("demo").innerHTML = c;
+}
+</script>
+
+</body>
+</html> 

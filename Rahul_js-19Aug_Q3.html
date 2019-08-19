@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1> Enter a string</h1>
+	<input type="text" id="str">
+	<button type="button" onclick=" return myfunction()">Click Me!</button>
+	<script type="text/javascript">
+		function myfunction(){
+		var a=document.getElementById("str").value;
+		var b=a.split(" ");
+		b.sort();
+		document.write(b);
+	}
+</script>
+</body>
+</html>

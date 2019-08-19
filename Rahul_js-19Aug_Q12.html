@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<button type="button" onclick=" return myfunction()">Click Me!</button>
+<script type="text/javascript">
+	function myfunction(){
+        var d=new Date();
+        var x=d.getDay();
+        var t=d.getHours();
+        var m=d.getMinutes();
+        var s=d.getSeconds();
+
+        if(x==0){
+        	var y="Sunday";
+        }
+         if(x==1){
+        	var y="Monday";
+        }
+         if(x==0){
+        	var y="Tuesday";
+        }
+         if(x==0){
+        	var y="Wednsday";
+        }
+         if(x==0){
+        	var y="Thursday";
+        }
+         if(x==0){
+        	var y="Friday";
+        }
+         if(x==0){
+        	var y="Saturday";
+        }
+        document.write("Today: "+y);
+
+          if(t>12){
+        	t=t-12;
+        	  document.write("<br>Time: "+t+":"+m+":"+s+""+" PM");
+        }
+        else{ 
+        document.write("time:"+t+":"+m+":"+s+" AM");
+        } 
+	
+	}
+</script>
+</body>
+</html>

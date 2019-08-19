@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+		var stri = prompt("Enter a string");
+
+		function nonrepeat(st)
+		{
+			// var k=0;
+			var non = [];
+			var arr = st.split('');
+			for(var i=0;i<arr.length;i++){
+				for(var j=0;j<arr.length;j++)
+				{
+					if (arr[i] == arr[j] && i != j) 
+						{
+							break;
+						}
+				    else if (j == arr.length - 1) 
+				    	{
+				    		non.push(arr[i])
+				    	}
+				  }
+
+				}
+					
+					console.log(non);
+			}
+		
+		nonrepeat(stri);
+	</script>
+
+</body>
+</html>

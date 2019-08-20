@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title>Take input from user and create n number of text boxes dynamically</title>
+    <script>
+    function generate() {
+
+        var a = parseInt(document.getElementById("nochapter").value);
+        var ch = document.getElementById("ch");
+
+        for (i = 0; i < a; i++) {
+            var input = document.createElement("input");
+            ch.appendChild(input);
+        }
+    }
+    </script>
+</head>
+
+<body>
+    <h1> Creating textboxes dynamically</h1>
+    <form>
+        No. of textboxes required
+        <input type="text" id="nochapter" />
+        <input type="button" value="set" onclick="generate()" />
+        <div id="ch"></div>
+    </form>
+</body>
+</html>
